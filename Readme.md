@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Михаил Кулешов](https://up.htmlacademy.ru/adaptive/26/user/1919603).
-* Наставник: [Кристина Новикова](https://up.htmlacademy.ru/adaptive/26/user/860979).`.
+* Наставник: [Михаил Кулешов](https://up.htmlacademy.ru/adaptive/26/user/860979).`.
 
 ---
 
