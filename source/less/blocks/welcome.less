@@ -1,0 +1,72 @@
+.welcome__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  padding: 90px 19px 85px 19px;
+  background-color: #81b3d2;
+  background-image: url("../img/welcome-logo-back.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.welcome__wrapper {
+  text-align: center;
+
+  &--index-margin {
+    margin: 32px 0 16px 0;
+
+    @media (min-width: @tablet-width) {
+      margin: 47px 0 56px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 59px 0 44px 0;
+    }
+  }
+
+  &--form-margin {
+    margin: 36px 0 28px 0;
+
+    @media (min-width: @tablet-width) {
+      margin: 64px 0 102px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 115px 0 66px 0;
+    }
+  }
+
+  &--photo-margin {
+    margin: 33px 0 22px 0;
+
+    @media (min-width: @tablet-width) {
+      margin: 62px 0 63px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 100px 0 65px 0;
+    }
+  }
+}
+
+.welcome__title {
+  margin: 0;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.welcome__subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
