@@ -1,0 +1,68 @@
+.input-block {
+  // выставил flex, т.к. так по идее легче закрепить подпись и поле ввоа, чтобы они не ерзали + центрируется textarea
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    &--textarea {
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--textarea {
+      align-items: center;
+    }
+  }
+}
+
+.input-block__field {
+  height: 58px;
+  width: 264px;
+  padding-left: 16px;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
+
+  &::placeholder {
+    color: #000000;
+  }
+
+  &--color::placeholder {
+    color: rgba(#000000, 0.3);
+  }
+
+  &--textarea-width {
+    @media (min-width: @tablet-width) {
+      width: 100%;
+      height: 160px;
+      padding: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 768px;
+    }
+  }
+
+  &--width {
+    @media (min-width: @desktop-width) {
+      width: 403px;
+    }
+  }
+}
+
+.input-block__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}

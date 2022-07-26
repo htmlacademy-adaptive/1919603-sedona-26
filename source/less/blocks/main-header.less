@@ -1,0 +1,20 @@
+.main-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 55px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.main-header__logo {
+  justify-self: center;
+
+  &--hidden {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
