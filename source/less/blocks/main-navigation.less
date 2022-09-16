@@ -1,23 +1,28 @@
 .main-navigation {
+  width: 100%;
   align-self: center;
+
+  @media (max-width: @mobile-width-only) {
+    top: 0;
+    position: absolute;
+  }
+
+  &--closed .main-navigation__wrapper {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+
+  &--nojs .main-navigation__toggle {
+    display: none;
+  }
+
+  &--nojs .main-navigation__wrapper {
+    display: block;
+  }
 }
-
-// .main-navigation__toggle {
-//   position: absolute;
-//   top: 17px;
-//   right: 20px;
-//   z-index: 2;
-//   display: block;
-//   width: 23px;
-//   height: 22px;
-//   padding: 0;
-//   cursor: pointer;
-//   border: none;
-
-//   @media (min-width: @tablet-width) {
-//     display: none;
-//   }
-// }
 
 .main-navigation__toggle {
   position: absolute;
@@ -26,15 +31,10 @@
   z-index: 2;
   display: block;
   width: 23px;
-  height: 20px;
+  height: 24px;
   background-color: #ffffff;
   cursor: pointer;
   border: none;
-
-  &:hover,
-  &:active {
-    background-color: #ffffff;
-  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -62,12 +62,13 @@
 .main-navigation--opened .main-navigation__toggle {
   top: 17px;
   right: 17px;
+  background-color: #81b3d2;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 10px;
     right: 0;
     width: 23px;
     height: 4px;

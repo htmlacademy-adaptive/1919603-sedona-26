@@ -6,16 +6,30 @@
 }
 
 .page-search__warpper {
-  padding: 0 30px 32px 30px;
+  margin-bottom: 32px;
+  padding: 0 30px 0 30px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .page-search__title {
   margin: 0;
+  margin-bottom: 35px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .page-search__subtitle {
@@ -30,6 +44,14 @@
   max-height: 26px;
   padding: 16px 0 16px 0;
   margin: 0 18px 49px 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .page-search__photo-map {
