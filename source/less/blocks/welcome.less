@@ -3,7 +3,6 @@
   justify-content: center;
   margin-bottom: 32px;
   padding: 90px 19px 85px 19px;
-  background-color: #81b3d2;
   background-image: url("../img/welcome-logo-back.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -52,6 +51,7 @@
 
 .welcome__title {
   margin: 0;
+  margin-bottom: 35px;
   color: #000000;
   font-weight: 700;
   font-size: 18px;
@@ -60,6 +60,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+  }
+
+  &--size {
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+    }
   }
 }
 

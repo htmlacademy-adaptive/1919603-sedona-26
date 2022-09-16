@@ -1,6 +1,10 @@
 .site-list {
   .clear-list;
 
+  @media (max-width: @mobile-width-only) {
+    background-color: rgb(129, 179, 210);
+  }
+
   @media (min-width: @tablet-width) {
     width: 100%;
     display: flex;
@@ -10,6 +14,7 @@
 .site-list__link {
   width: 100%;
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
@@ -32,18 +37,26 @@
 
 .site-list__item {
   width: 100%;
-  height: 55px;
+  height: 53px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #81b3d2;
-  box-shadow: 0 2px 0 rgba(#010101, 0.2), inset 0 2px 0 rgba(#ffffff, 0.2);
+
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+    &:last-child {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 87.75%, rgba(0, 0, 0, 0.2) 100%);
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;
     background-color: #ffffff;
     box-shadow: none;
   }
+
 
   &--hidden {
     display: none;

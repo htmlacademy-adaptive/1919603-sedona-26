@@ -8,7 +8,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 200px;
-    margin-bottom: 100px;
+    margin-bottom: 91px;
   }
 }
 
@@ -21,14 +21,21 @@
 }
 
 .video-presentation__title {
+  margin: 0;
+  margin-bottom: 21px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-presentation__subtitle {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -37,6 +44,7 @@
 }
 
 .video-presentation__video {
+  display: block;
   width: 100%;
   object-fit: cover;
 
